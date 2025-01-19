@@ -25,15 +25,7 @@
             android:name=".menu"
             >
         </activity>
-        <activity
-            android:name=".crear">
-        </activity>
-        <activity
-            android:name=".actualizar" />
-        <activity
-            android:name=".ver" >
 
-        </activity>
     </application>
 
 </manifest>
