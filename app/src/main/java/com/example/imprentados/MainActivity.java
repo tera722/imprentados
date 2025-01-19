@@ -7,7 +7,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
-
+import android.content.Intent;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -50,11 +50,14 @@ public class MainActivity extends AppCompatActivity {
                     TextPass.setText("");
 
                     Toast.makeText(MainActivity.this, "Ok", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this, menu.class);
+                    startActivity(intent);
+
                 }
             }
         });
 
 
-
     }
+
 }
