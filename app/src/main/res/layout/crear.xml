@@ -16,301 +16,278 @@
         android:layout_gravity="center"
         android:layout_margin="40dp">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_margin="10sp"
-            android:orientation="vertical"
-            android:background="@color/black">
+            android:fillViewport="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
                 android:orientation="vertical"
-                android:layout_marginTop="10dp"
-                >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="5dp"
-                    android:text="@string/Cost"
-                    android:fontFamily="@font/copperplateregular"
-                    android:textColor="@color/white"
-                    android:layout_gravity="center"
-                    android:textSize="30sp"
-                    />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/white"
-                    android:fontFamily="@font/copperplateregular"
-                    android:textColor="@color/white"
-                    android:hint="@string/CostInput"
-                    android:inputType="number"
-                    android:textSize="25sp"
-                    />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-
-                >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="5dp"
-                    android:text="@string/Hmuch"
-                    android:fontFamily="@font/copperplateregular"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:layout_gravity="center"
-                    />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/white"
-                    android:fontFamily="@font/copperplateregular"
-                    android:textColor="@color/white"
-                    android:hint="@string/HmuchInput"
-                    android:inputType="number"
-                    android:textSize="25sp"
-                    />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="5dp"
-                    android:text="@string/color"
-                    android:fontFamily="@font/copperplateregular"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:layout_gravity="center"
-                    />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/white"
-                    android:fontFamily="@font/copperplateregular"
-                    android:textColor="@color/white"
-                    android:hint="@string/colorInput"
-                    android:inputType="number"
-                    android:textSize="25sp"
-                    />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="5dp"
-                    android:text="@string/FRecive"
-                    android:fontFamily="@font/copperplateregular"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:layout_gravity="center"
-                    />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/white"
-                    android:fontFamily="@font/copperplateregular"
-                    android:textColor="@color/white"
-                    android:hint="@string/FInput"
-                    android:inputType="number"
-                    android:textSize="25sp"
-                    />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="5dp"
-                    android:text="@string/FSolid"
-                    android:fontFamily="@font/copperplateregular"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:layout_gravity="center"
-                    />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/white"
-                    android:fontFamily="@font/copperplateregular"
-                    android:textColor="@color/white"
-                    android:hint="@string/FInput"
-                    android:inputType="number"
-                    android:textSize="25sp"
-                    />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/Details"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
+                android:background="@color/black">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    >
+                    android:layout_marginTop="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginStart="5dp"
-                        android:text="@string/Client"
+                        android:text="@string/Cost"
                         android:fontFamily="@font/copperplateregular"
                         android:textColor="@color/white"
-                        android:textSize="30sp"
                         android:layout_gravity="center"
-                        />
+                        android:textSize="30sp" />
 
                     <EditText
                         android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white"
+                        android:fontFamily="@font/copperplateregular"
+                        android:textColor="@color/white"
+                        android:hint="@string/CostInput"
+                        android:inputType="number"
+                        android:textSize="29sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/Hmuch"
+                        android:fontFamily="@font/copperplateregular"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:layout_gravity="center" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white"
+                        android:fontFamily="@font/copperplateregular"
+                        android:textColor="@color/white"
+                        android:hint="@string/HmuchInput"
+                        android:inputType="number"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/color"
+                        android:fontFamily="@font/copperplateregular"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:layout_gravity="center" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white"
+                        android:fontFamily="@font/copperplateregular"
+                        android:textColor="@color/white"
+                        android:hint="@string/colorInput"
+                        android:inputType="number"
+                        android:textSize="27sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/FRecive"
+                        android:fontFamily="@font/copperplateregular"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:layout_gravity="center" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white"
+                        android:fontFamily="@font/copperplateregular"
+                        android:textColor="@color/white"
+                        android:hint="@string/FInput"
+                        android:inputType="number"
+                        android:textSize="29sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/FSolid"
+                        android:fontFamily="@font/copperplateregular"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:layout_gravity="center" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white"
+                        android:fontFamily="@font/copperplateregular"
+                        android:textColor="@color/white"
+                        android:hint="@string/FInput"
+                        android:inputType="number"
+                        android:textSize="29sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/Client"
+                            android:fontFamily="@font/copperplateregular"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"
+                            android:layout_gravity="center" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@color/white"
+                            android:fontFamily="@font/copperplateregular"
+                            android:textColor="@color/white"
+                            android:hint="@string/ClientInput"
+                            android:inputType="number"
+                            android:textSize="25sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Product"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/Product"
+                            android:fontFamily="@font/copperplateregular"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"
+                            android:layout_gravity="center" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@color/white"
+                            android:fontFamily="@font/copperplateregular"
+                            android:textColor="@color/white"
+                            android:hint="@string/ProductInput"
+                            android:inputType="number"
+                            android:textSize="27sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/Employend"
+                            android:fontFamily="@font/copperplateregular"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"
+                            android:layout_gravity="center" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@color/white"
+                            android:fontFamily="@font/copperplateregular"
+                            android:textColor="@color/white"
+                            android:hint="@string/EmployendInput"
+                            android:inputType="number"
+                            android:textSize="27sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/details"
+                        android:fontFamily="@font/copperplateregular"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:layout_gravity="center" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
                         android:background="@color/white"
                         android:fontFamily="@font/copperplateregular"
                         android:textColor="@color/white"
                         android:hint="@string/ClientInput"
                         android:inputType="number"
-                        android:textSize="25sp"
-                        />
+                        android:textSize="31sp" />
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/Product"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="5dp"
-                        android:text="@string/Product"
-                        android:fontFamily="@font/copperplateregular"
-                        android:textColor="@color/white"
-                        android:textSize="30sp"
-                        android:layout_gravity="center"
-                        />
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/white"
-                        android:fontFamily="@font/copperplateregular"
-                        android:textColor="@color/white"
-                        android:hint="@string/ProductInput"
-                        android:inputType="number"
-                        android:textSize="25sp"
-                        />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="5dp"
-                        android:text="@string/Employend"
-                        android:fontFamily="@font/copperplateregular"
-                        android:textColor="@color/white"
-                        android:textSize="30sp"
-                        android:layout_gravity="center"
-                        />
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/white"
-                        android:fontFamily="@font/copperplateregular"
-                        android:textColor="@color/white"
-                        android:hint="@string/EmployendInput"
-                        android:inputType="number"
-                        android:textSize="25sp"
-                        />
-
-                </LinearLayout>
-
-                <TextView
+                <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="5dp"
-                    android:text="@string/details"
-                    android:fontFamily="@font/copperplateregular"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
+                    android:layout_height="48dp"
                     android:layout_gravity="center"
-                    />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/white"
-                    android:fontFamily="@font/copperplateregular"
                     android:textColor="@color/white"
-                    android:hint="@string/ClientInput"
-                    android:inputType="number"
-                    android:textSize="25sp"
-                    />
+                    android:backgroundTint="@color/Azul"
+                    android:text="@string/Add"
+                    android:fontFamily="@font/copperplateregular"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
 
             </LinearLayout>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:textColor="@color/white"
-                android:backgroundTint="@color/Azul"
-                android:text="@string/Add"
-                android:fontFamily="@font/copperplateregular"
-                android:textSize="20sp"
-                android:layout_marginTop="10dp"
-                />
-
-
-        </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 </LinearLayout>
