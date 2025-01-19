@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Imprentados</string>
+
+    <string name="Welc">¡Bienvenido denuevo!</string>
+    <string name="LOG">Login</string>
+    <string name="Pas">Contraseña:</string>
+    <string name="Us">Usuario:</string>
+    <string name="Acept">Aceptar</string>
+    <string name="InputPass">ingrese contraseña</string>
+    <string name="InputUser">ingrese usuario</string>
+    <string name="men">menu</string>
+    <string name="ima">imagen</string>
+    <string name="arg">agregar</string>
+    <string name="act">actualizar</string>
+    <string name="vr">ver</string>
+
+    <string name="PK">Codigo:</string>
+    <string name="DEL">Eliminar</string>
+    <string name="Cost">Costo Total:</string>
+    <string name="Hmuch">Cantidad:</string>
+    <string name="color">Color:</string>
+    <string name="FRecive">Fecha Entrega:</string>
+    <string name="FSolid">Fecha Pedido:</string>
+    <string name="details">Detalles:</string>
+    <string name="Client">Cliente:</string>
+    <string name="Product">Producto:</string>
+    <string name="Employend">Empleado:</string>
+
+
+    <string name="Add">Agregar</string>
+    <string name="CostInput">Ingresa costo</string>
+    <string name="HmuchInput">Ingresa cantidad</string>
+    <string name="colorInput">ingresa Color</string>
+    <string name="FInput">ingresa Fecha</string>
+    <string name="detailsInput">ingresa detalles</string>
+    <string name="ClientInput">Ingresa Cliente</string>
+    <string name="ProductInput">Ingresa Producto</string>
+    <string name="EmployendInput">Quien atendio</string>
+
+
+</resources>
