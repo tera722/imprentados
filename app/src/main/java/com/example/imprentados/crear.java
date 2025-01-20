@@ -79,7 +79,4 @@ public class crear extends AppCompatActivity {
         etEmpleado.setText("");
         etDetalles.setText("");
     }
-
-
-
 }

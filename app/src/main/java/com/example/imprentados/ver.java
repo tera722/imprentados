@@ -1,4 +1,9 @@
 package com.example.imprentados;
 
-public class ver {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class ver extends AppCompatActivity {
+
+
+
 }
