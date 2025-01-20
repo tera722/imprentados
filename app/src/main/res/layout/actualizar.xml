@@ -16,19 +16,305 @@
         android:layout_gravity="center"
         android:layout_margin="40dp">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_margin="10sp"
-            android:background="@color/black">
-
-        </LinearLayout>
+            android:fillViewport="true">
 
 
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:orientation="vertical"
+                android:background="@color/black">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="300dp"
+                        android:fontFamily="@font/copperplateregular"
+                        android:text="@string/act"
+                        android:textColor="@color/white"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:baselineAligned="false"
+                        android:fontFamily="@font/copperplateregular"
+                        android:text="@string/Cost"
+                        android:textColor="@color/white"
+                        android:textSize="30sp" />
+
+                    <EditText
+                        android:id="@+id/etCosto"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white"
+                        android:fontFamily="@font/copperplateregular"
+                        android:hint="@string/CostInput"
+                        android:inputType="number"
+                        android:textColor="@color/white"
+                        android:textSize="29sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/Hmuch"
+                        android:fontFamily="@font/copperplateregular"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:layout_gravity="center" />
+
+                    <EditText
+                        android:id="@+id/etCantidad"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white"
+                        android:fontFamily="@font/copperplateregular"
+                        android:textColor="@color/white"
+                        android:hint="@string/HmuchInput"
+                        android:inputType="number"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/color"
+                        android:fontFamily="@font/copperplateregular"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:layout_gravity="center" />
+
+                    <EditText
+                        android:id="@+id/etColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white"
+                        android:fontFamily="@font/copperplateregular"
+                        android:textColor="@color/white"
+                        android:hint="@string/colorInput"
+                        android:inputType="number"
+                        android:textSize="27sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/FRecive"
+                        android:fontFamily="@font/copperplateregular"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:layout_gravity="center" />
+
+                    <EditText
+                        android:id="@+id/etFechaEntrega"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white"
+                        android:fontFamily="@font/copperplateregular"
+                        android:textColor="@color/white"
+                        android:hint="@string/FInput"
+                        android:inputType="number"
+                        android:textSize="29sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/FSolid"
+                        android:fontFamily="@font/copperplateregular"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:layout_gravity="center" />
+
+                    <EditText
+                        android:id="@+id/etFechaRecibo"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white"
+                        android:fontFamily="@font/copperplateregular"
+                        android:textColor="@color/white"
+                        android:hint="@string/FInput"
+                        android:inputType="number"
+                        android:textSize="29sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/Client"
+                            android:fontFamily="@font/copperplateregular"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"
+                            android:layout_gravity="center" />
+
+                        <EditText
+                            android:id="@+id/etCliente"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@color/white"
+                            android:fontFamily="@font/copperplateregular"
+                            android:textColor="@color/white"
+                            android:hint="@string/ClientInput"
+                            android:inputType="number"
+                            android:textSize="25sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Product"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/Product"
+                            android:fontFamily="@font/copperplateregular"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"
+                            android:layout_gravity="center" />
+
+                        <EditText
+                            android:id="@+id/etProducto"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@color/white"
+                            android:fontFamily="@font/copperplateregular"
+                            android:textColor="@color/white"
+                            android:hint="@string/ProductInput"
+                            android:inputType="number"
+                            android:textSize="27sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/Employend"
+                            android:fontFamily="@font/copperplateregular"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"
+                            android:layout_gravity="center" />
+
+                        <EditText
+                            android:id="@+id/etEmpleado"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@color/white"
+                            android:fontFamily="@font/copperplateregular"
+                            android:textColor="@color/white"
+                            android:hint="@string/EmployendInput"
+                            android:inputType="number"
+                            android:textSize="27sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/details"
+                        android:fontFamily="@font/copperplateregular"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:layout_gravity="center" />
+
+                    <EditText
+                        android:id="@+id/etDetalles"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white"
+                        android:fontFamily="@font/copperplateregular"
+                        android:textColor="@color/white"
+                        android:hint="@string/ClientInput"
+                        android:inputType="number"
+                        android:textSize="31sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_actualizar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/Azul"
+                    android:text="@string/Add"
+                    android:fontFamily="@font/copperplateregular"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
-
-
 
 
 
