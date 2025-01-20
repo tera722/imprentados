@@ -262,26 +262,35 @@
 
                     </LinearLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="5dp"
-                        android:text="@string/details"
-                        android:fontFamily="@font/copperplateregular"
-                        android:textColor="@color/black"
-                        android:textSize="30sp"
-                        android:layout_gravity="center" />
-
-                    <EditText
-                        android:id="@+id/etDetalles"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:background="@color/white"
-                        android:fontFamily="@font/copperplateregular"
-                        android:textColor="@color/black"
-                        android:hint="@string/ClientInput"
-                        android:inputType="number"
-                        android:textSize="31sp" />
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/details"
+                            android:fontFamily="@font/copperplateregular"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:layout_gravity="center" />
+
+                        <EditText
+                            android:id="@+id/etDetalles"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@color/white"
+                            android:fontFamily="@font/copperplateregular"
+                            android:textColor="@color/black"
+                            android:hint="@string/detailsInput"
+                            android:inputType="number"
+                            android:textSize="31sp" />
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
 

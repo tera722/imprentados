@@ -32,7 +32,7 @@
     <string name="HmuchInput">Ingresa cantidad</string>
     <string name="colorInput">ingresa Color</string>
     <string name="FInput">ingresa Fecha</string>
-    <string name="detailsInput">ingresa detalles</string>
+    <string name="detailsInput">ingresa detalles:</string>
     <string name="ClientInput">Ingresa Cliente</string>
     <string name="ProductInput">Ingresa Producto</string>
     <string name="EmployendInput">Quien atendio</string>
