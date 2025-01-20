@@ -14,16 +14,10 @@ public class crear extends AppCompatActivity {
     private EditText etCliente, etProducto, etEmpleado, etDetalles;
     private Button btnAgregar;
 
-    // ArrayList para almacenar registros
-    private ArrayList<Registro> registros;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.crear);
-
-        // Inicializar ArrayList
-        registros = new ArrayList<>();
 
         // Inicializar elementos de la interfaz
         inicializarVistas();
@@ -63,14 +57,6 @@ public class crear extends AppCompatActivity {
             String empleado = etEmpleado.getText().toString();
             String detalles = etDetalles.getText().toString();
 
-            // Crear nuevo objeto Registro
-            Registro registro = new Registro(costo, cantidad, color, fechaRecibo,
-                    fechaEntrega, cliente, producto,
-                    empleado, detalles);
-
-            // Agregar al ArrayList
-            registros.add(registro);
-
             // Limpiar campos
             limpiarCampos();
 
@@ -94,41 +80,6 @@ public class crear extends AppCompatActivity {
         etDetalles.setText("");
     }
 
-    // Clase Registro para almacenar datos individuales
-    private static class Registro {
-        private double costo;
-        private int cantidad;
-        private String color;
-        private String fechaRecibo;
-        private String fechaEntrega;
-        private String cliente;
-        private String producto;
-        private String empleado;
-        private String detalles;
 
-        public Registro(double costo, int cantidad, String color, String fechaRecibo,
-                        String fechaEntrega, String cliente, String producto,
-                        String empleado, String detalles) {
-            this.costo = costo;
-            this.cantidad = cantidad;
-            this.color = color;
-            this.fechaRecibo = fechaRecibo;
-            this.fechaEntrega = fechaEntrega;
-            this.cliente = cliente;
-            this.producto = producto;
-            this.empleado = empleado;
-            this.detalles = detalles;
-        }
 
-        // Métodos getter
-        public double getCosto() { return costo; }
-        public int getCantidad() { return cantidad; }
-        public String getColor() { return color; }
-        public String getFechaRecibo() { return fechaRecibo; }
-        public String getFechaEntrega() { return fechaEntrega; }
-        public String getCliente() { return cliente; }
-        public String getProducto() { return producto; }
-        public String getEmpleado() { return empleado; }
-        public String getDetalles() { return detalles; }
-    }
 }
