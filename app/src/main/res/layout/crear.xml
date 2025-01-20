@@ -52,9 +52,9 @@
                         android:layout_height="48dp"
                         android:background="@color/white"
                         android:fontFamily="@font/copperplateregular"
-                        android:textColor="@color/white"
                         android:hint="@string/CostInput"
                         android:inputType="number"
+                        android:textColor="@color/black"
                         android:textSize="29sp" />
 
                 </LinearLayout>
@@ -80,7 +80,7 @@
                         android:layout_height="48dp"
                         android:background="@color/white"
                         android:fontFamily="@font/copperplateregular"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:hint="@string/HmuchInput"
                         android:inputType="number"
                         android:textSize="25sp" />
@@ -108,7 +108,7 @@
                         android:layout_height="48dp"
                         android:background="@color/white"
                         android:fontFamily="@font/copperplateregular"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:hint="@string/colorInput"
                         android:inputType="number"
                         android:textSize="27sp" />
@@ -136,7 +136,7 @@
                         android:layout_height="48dp"
                         android:background="@color/white"
                         android:fontFamily="@font/copperplateregular"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:hint="@string/FInput"
                         android:inputType="number"
                         android:textSize="29sp" />
@@ -164,7 +164,7 @@
                         android:layout_height="48dp"
                         android:background="@color/white"
                         android:fontFamily="@font/copperplateregular"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:hint="@string/FInput"
                         android:inputType="number"
                         android:textSize="29sp" />
@@ -198,7 +198,7 @@
                             android:layout_height="48dp"
                             android:background="@color/white"
                             android:fontFamily="@font/copperplateregular"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:hint="@string/ClientInput"
                             android:inputType="number"
                             android:textSize="25sp" />
@@ -227,7 +227,7 @@
                             android:layout_height="48dp"
                             android:background="@color/white"
                             android:fontFamily="@font/copperplateregular"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:hint="@string/ProductInput"
                             android:inputType="number"
                             android:textSize="27sp" />
@@ -255,7 +255,7 @@
                             android:layout_height="48dp"
                             android:background="@color/white"
                             android:fontFamily="@font/copperplateregular"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:hint="@string/EmployendInput"
                             android:inputType="number"
                             android:textSize="27sp" />
@@ -268,7 +268,7 @@
                         android:layout_marginStart="5dp"
                         android:text="@string/details"
                         android:fontFamily="@font/copperplateregular"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textSize="30sp"
                         android:layout_gravity="center" />
 
@@ -278,7 +278,7 @@
                         android:layout_height="48dp"
                         android:background="@color/white"
                         android:fontFamily="@font/copperplateregular"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:hint="@string/ClientInput"
                         android:inputType="number"
                         android:textSize="31sp" />
@@ -290,7 +290,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="48dp"
                     android:layout_gravity="center"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:backgroundTint="@color/Azul"
                     android:text="@string/Add"
                     android:fontFamily="@font/copperplateregular"
