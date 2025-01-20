@@ -86,7 +86,7 @@
                         android:fontFamily="@font/copperplateregular"
                         android:hint="@string/CostInput"
                         android:inputType="number"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textSize="29sp" />
 
                 </LinearLayout>
@@ -112,7 +112,7 @@
                         android:layout_height="48dp"
                         android:background="@color/white"
                         android:fontFamily="@font/copperplateregular"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:hint="@string/HmuchInput"
                         android:inputType="number"
                         android:textSize="25sp" />
@@ -140,9 +140,9 @@
                         android:layout_height="48dp"
                         android:background="@color/white"
                         android:fontFamily="@font/copperplateregular"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:hint="@string/colorInput"
-                        android:inputType="number"
+                        android:inputType="text"
                         android:textSize="27sp" />
 
                 </LinearLayout>
@@ -168,9 +168,9 @@
                         android:layout_height="48dp"
                         android:background="@color/white"
                         android:fontFamily="@font/copperplateregular"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:hint="@string/FInput"
-                        android:inputType="number"
+                        android:inputType="date"
                         android:textSize="29sp" />
 
                 </LinearLayout>
@@ -196,9 +196,9 @@
                         android:layout_height="48dp"
                         android:background="@color/white"
                         android:fontFamily="@font/copperplateregular"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:hint="@string/FInput"
-                        android:inputType="number"
+                        android:inputType="date"
                         android:textSize="29sp" />
 
                 </LinearLayout>
@@ -230,9 +230,9 @@
                             android:layout_height="48dp"
                             android:background="@color/white"
                             android:fontFamily="@font/copperplateregular"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:hint="@string/ClientInput"
-                            android:inputType="number"
+                            android:inputType="text"
                             android:textSize="25sp" />
 
                     </LinearLayout>
@@ -259,9 +259,9 @@
                             android:layout_height="48dp"
                             android:background="@color/white"
                             android:fontFamily="@font/copperplateregular"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:hint="@string/ProductInput"
-                            android:inputType="number"
+                            android:inputType="text"
                             android:textSize="27sp" />
 
                     </LinearLayout>
@@ -287,9 +287,9 @@
                             android:layout_height="48dp"
                             android:background="@color/white"
                             android:fontFamily="@font/copperplateregular"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:hint="@string/EmployendInput"
-                            android:inputType="number"
+                            android:inputType="text"
                             android:textSize="27sp" />
 
                     </LinearLayout>
@@ -310,10 +310,11 @@
                         android:layout_height="48dp"
                         android:background="@color/white"
                         android:fontFamily="@font/copperplateregular"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:hint="@string/ClientInput"
-                        android:inputType="number"
-                        android:textSize="31sp" />
+                        android:inputType="text"
+                        android:textSize="31sp"
+                        />
 
                 </LinearLayout>
 
