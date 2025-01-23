@@ -13,6 +13,8 @@
     <string name="arg">agregar</string>
     <string name="act">actualizar</string>
     <string name="vr">ver</string>
+    <string name="registrar">registrar</string>
+
 
     <string name="PK">Codigo:</string>
     <string name="DEL">Eliminar</string>
