@@ -41,6 +41,10 @@
                 <activity android:name=".ver">
 
                 </activity>
+        <activity android:name=".registro"
+            >
+
+        </activity>
         </application>
 
     </manifest>
