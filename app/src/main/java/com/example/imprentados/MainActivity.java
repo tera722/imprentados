@@ -65,9 +65,6 @@ public class MainActivity extends AppCompatActivity {
 
                     realizarLogin(UserInput, PassInput);
 
-                    Toast.makeText(MainActivity.this, "Ok", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(MainActivity.this, menu.class);
-                    startActivity(intent);
                 }
             }
         });
@@ -101,6 +98,9 @@ public class MainActivity extends AppCompatActivity {
                                 String message = response.getString("message");
                                 if (success) {
                                     tvResultado.setText("Login exitoso: " + message);
+
+                                    Intent intent = new Intent(MainActivity.this, menu.class);
+                                    startActivity(intent);
                                 } else {
                                     tvResultado.setText("Error: " + message);
                                 }
