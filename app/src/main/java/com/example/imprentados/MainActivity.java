@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView tvResultado;
     private RequestQueue requestQueue;
-    private final String URL_API = "http://10.0.2.2/login.php";
+    private final String URL_API = "http://10.0.2.2/loginBase.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +72,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button ButtonRegister = findViewById(R.id.registrar);
+        ButtonRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                    Intent intent = new Intent(MainActivity.this, registro.class);
+                    startActivity(intent);
+            }
+        });
     }
 
     private void realizarLogin(String usuario, String contraseña) {
