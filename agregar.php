@@ -30,31 +30,51 @@ $producto = isset($data["producto"]) ? $data["producto"] : '';
 $empleado = isset($data["empleado"]) ? $data["empleado"] : '';
 $detalles = isset($data["detalles"]) ? $data["detalles"] : '';
 
-
 // Verificar que los campos no estén vacíos
-if (empty($costo) || empty($cantidad) || empty($cantidad)  || empty($color)  || empty($fechaentrega) || empty(fechapedido) || empty($cliente) || empty($producto)  || empty($empleado)) {
-    echo json_encode(["success" => false, "message" => "todos los datos son obligatorios"]);
+if (empty($costo) || empty($cantidad) || empty($color) || empty($fechaentrega) || empty($fechapedido) || empty($cliente) || empty($producto) || empty($empleado)) {
+    echo json_encode(["success" => false, "message" => "Todos los datos son obligatorios"]);
     exit();
 }
 
-// Insertar nuevo usuario
+// Validar que las claves foráneas existan (opcional pero recomendable)
 try {
-    $stmt = $pdo->prepare("INSERT INTO pide (Costo_total, Cantidad, Color, Fecha_entrega, Fecha_pedido, Detalles, Cliente, Producto, Empleado) VALUES (:costo, :cantidad, :color,:fechaentrega ,:fechapedido,:cliente, :producto, :empleado, :detalles)");
+    $queries = [
+        "SELECT 1 FROM cliente WHERE id = :id LIMIT 1" => $cliente,
+        "SELECT 1 FROM producto WHERE id = :id LIMIT 1" => $producto,
+        "SELECT 1 FROM empleado WHERE id = :id LIMIT 1" => $empleado
+    ];
+    foreach ($queries as $query => $value) {
+        $stmt = $pdo->prepare($query);
+        $stmt->bindParam(":id", $value);
+        $stmt->execute();
+        if ($stmt->rowCount() === 0) {
+            echo json_encode(["success" => false, "message" => "Valor no válido en una clave foránea"]);
+            exit();
+        }
+    }
+} catch (PDOException $e) {
+    echo json_encode(["success" => false, "message" => "Error al validar claves foráneas"]);
+    exit();
+}
+
+// Insertar nuevo pedido
+try {
+    $stmt = $pdo->prepare("INSERT INTO pide (Costo_total, Cantidad, Color, Fecha_entrega, Fecha_pedido, Detalles, Cliente, Producto, Empleado) 
+                           VALUES (:costo, :cantidad, :color, :fechaentrega, :fechapedido, :detalles, :cliente, :producto, :empleado)");
     $stmt->bindParam(":costo", $costo);
-    $stmt->bindParam(":cantidad", $cantidad); // Cambiado para que coincida
+    $stmt->bindParam(":cantidad", $cantidad);
     $stmt->bindParam(":color", $color);
     $stmt->bindParam(":fechaentrega", $fechaentrega);
     $stmt->bindParam(":fechapedido", $fechapedido);
+    $stmt->bindParam(":detalles", $detalles);
     $stmt->bindParam(":cliente", $cliente);
     $stmt->bindParam(":producto", $producto);
     $stmt->bindParam(":empleado", $empleado);
-    $stmt->bindParam(":detalles", $detalles);
     $stmt->execute();
-    
 
     echo json_encode([
         "success" => true, 
-        "message" => "pedido registrado exitosamente"
+        "message" => "Pedido registrado exitosamente"
     ]);
 } catch (PDOException $e) {
     echo json_encode([
@@ -62,4 +82,3 @@ try {
         "message" => "Error al registrar pedido: " . $e->getMessage()
     ]);
 }
-?>
